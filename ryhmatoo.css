@@ -1,3 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.nav-container {
+  background-color: #29fcff;
+  padding: 1.25rem 2rem;
+  border-radius: 1.5rem;
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #475837;
+  transition: color 0.3s ease;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-text {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #574835;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.nav-item:hover .nav-icon {
+  color: #475837;
+  transform: translateY(-5px);
+}
+
+.nav-item:hover .nav-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-item:active .nav-icon {
+  color: #893846;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #893846;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover::before {
+  transform: scaleX(1);
+}
 
 /*# sourceMappingURL=ryhmatoo.css.map */
