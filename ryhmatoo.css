@@ -103,4 +103,10 @@
   transform: scaleX(1);
 }
 
+.carousel-track img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=ryhmatoo.css.map */
