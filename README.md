@@ -1,3 +1,0 @@
-# Ryhmatoo
-
-Test readme
