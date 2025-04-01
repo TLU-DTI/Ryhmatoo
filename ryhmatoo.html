@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ryhmatoo.css">
-    <script>src="ryhmatoo.js"</script>
+    <script src="ryhmatoo.js"></script>
     <title>Reisimine</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
@@ -46,15 +46,35 @@
             </div>
         </ul>
     </nav>
-    <div class="carousel">
-        <button class="prev">&#10094;</button>
-        <div class="carousel-track">
-            <img src="images/photo1.jpg" alt="Image 1">
-            <img src="images/photo2.jpg" alt="Image 2">
-            <img src="images/photo3.jpg" alt="Image 3">
-            <img src="images/photo4.jpg" alt="Image 4">
+
+    <section class="carousel-section">
+        <h2 class="carousel-title">KASUTAJAD SOOVITAVAD KÜLASTADA</h2>
+        <div class="carousel">
+            <button class="carousel-button prev">&#10094;</button>
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img src="images/photo1.jpg" alt="Image 1">
+                    <div class="slide-caption">Kreeka</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/photo2.jpg" alt="Image 2">
+                    <div class="slide-caption">Norra</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/photo3.jpg" alt="Image 3">
+                    <div class="slide-caption">Eesti</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/photo4.jpg" alt="Image 4">
+                    <div class="slide-caption">Taani</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/photo5.jpg" alt="Image 4">
+                    <div class="slide-caption">Itaalia</div>
+                </div>
+            </div>
+            <button class="carousel-button next">&#10095;</button>
         </div>
-        <button class="next">&#10095;</button>
-    </div>
+    </section>
 </body>
 </html>
