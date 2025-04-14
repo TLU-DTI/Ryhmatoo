@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  background-color: rgb(117, 139, 253);
+  padding: 1.25rem 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.menu-items {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-text {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  opacity: 1;
+  transform: none;
+}
+
+.logo .nav-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  opacity: 1;
+  transform: none;
+  color: #ffffff;
+}
+.logo::before {
+  display: none;
+}
+.logo .nav-link {
+  color: #ffffff;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.logo .nav-icon {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+}
+.logo:hover .nav-icon {
+  color: #ffffff;
+  transform: none;
+}
+.logo:hover .nav-text {
+  color: #ffffff;
+}
+
+.nav-item:hover .nav-icon {
+  transform: translateY(-5px);
+}
+
+.nav-item:active .nav-icon {
+  color: #ffffff;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover::before {
+  transform: scaleX(1);
+}
+
+body {
+  background-color: #DFE8FF;
+}
+
+h1 {
+  color: #758BFD;
+  font-family: "Monospace";
+  font-size: 70px;
+  text-shadow: 3px 3px 6px rgb(180, 188, 227), 0 0 25px rgba(173, 160, 240, 0.6);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.country-page {
+  position: relative;
+  padding: 20px;
+}
+
+.info-box {
+  width: 400px;
+  padding: 10px;
+  background-color: rgba(149, 167, 255, 0.34);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #2f2939;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+h3 {
+  color: #758BFD;
+  margin-top: 2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.card {
+  background: rgba(149, 167, 255, 0.34);
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 50px;
+  width: 500px;
+  font-size: 20px;
+}
+
+ul {
+  padding-left: 1em;
+}
+ul li {
+  margin-bottom: 0.5em;
+}
+
+.tags span {
+  background: #eee;
+  padding: 0.4em 0.8em;
+  border-radius: 6px;
+  margin-right: 0.5em;
+  font-size: 0.9em;
+}
+
+footer {
+  text-align: center;
+  padding: 2em;
+  font-size: 0.9em;
+  color: black;
+}
+
+/*# sourceMappingURL=albania.css.map */
