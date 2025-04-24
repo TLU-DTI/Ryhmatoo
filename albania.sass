@@ -2,13 +2,11 @@ $primary-color: rgb(117, 139, 253)
 $secondary: #ffffff
 $accent: #ffffff
 $surface: #ffffff
-$second:#758BFD
+$second: #758BFD
 
 *
   margin: 0
   padding: 0
-
-
 
 .nav-container
   background-color: $primary-color
@@ -98,35 +96,122 @@ $second:#758BFD
 .nav-item:hover::before
   transform: scaleX(1)
 
-
-body 
+body
   background-color: #DFE8FF
 
-
-h1                         
-  color: $second         
-  font-family: 'Monospace'  
+h1
+  color: $second
+  font-family: 'Monospace'
   font-size: 70px
   text-shadow: 3px 3px 6px rgb(180, 188, 227), 0 0 25px rgba(173, 160, 240, 0.6)
-  text-align: center  
+  text-align: center
   margin-top: 30px
 
-
-.country-page 
+.country-page
   position: relative
   padding: 20px
 
+.info-box
+  width: 400px
+  padding: 10px
+  background-color: red
+  border-radius: 12px
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+  font-size: 22px
+  line-height: 1.2
+  text-align: center
+  margin-top: 30px
 
-.info-box 
-    width: 400px
-    padding: 10px
-    background-color: rgb(149 167 255 / 34%)
-    border-radius: 12px 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
-    font-size: 22px
-    line-height: 1.2
-    text-align: center
-    margin-top: 30px
+h2
+  font-size: 1.9rem
+  line-height: 1.7
+  color: #758BFD
+  padding: 20px
+
+.container
+  margin: 0 auto
+  padding: 2em
+
+h3
+  color: #758BFD
+  margin-top: 2em
 
 
+.card
+  background: rgba(149, 167, 255, 0.34)
+  padding: 1.5em
+  border-radius: 12px
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05)
+  margin: 30px
+  max-width: 900px
+  font-size: 20px
 
+ul
+  padding-left: 1em
+
+ul li 
+  margin-bottom: 0.5em
+
+.tags span
+  background: #DFE8FF
+  padding: 0.4em 0.8em
+  border-radius: 6px
+  margin-right: 0.5em
+  font-size: 0.9em
+
+.double-column
+  display: flex
+  justify-content: space-between
+
+.footer
+  text-align: center
+  padding: 2em
+  font-size: 1.3em
+  color: black
+
+
+.info-carousel-wrapper
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  gap: 2rem
+  flex-wrap: wrap
+  margin: 0 30px
+
+.info-card
+  flex: 1
+  max-width: 300px
+
+.carousel
+  width: 350px
+  position: relative
+  overflow: hidden
+  border-radius: 12px
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
+
+.carousel-track
+  display: flex
+  transition: transform 0.5s ease
+
+.carousel img
+  width: 100%
+  flex-shrink: 0
+  object-fit: cover
+  border-radius: 12px
+
+.carousel-button
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  background: rgba(255, 255, 255, 0.8)
+  border: none
+  padding: 0.5em
+  font-size: 1.2rem
+  border-radius: 50%
+  cursor: pointer
+
+.carousel-button.prev
+  left: 10px
+
+.carousel-button.next
+  right: 10px
