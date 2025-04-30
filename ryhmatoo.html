@@ -40,7 +40,17 @@
             </div>
         </ul>
     </nav>
-
+    <section>
+        <div class="info">
+          <div class="info-inner">
+            <div class="text-content">
+              <h2>Info</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Placerat in id cursus mi pretium tellus duis. Urna tempor pulvinar vivamus fringilla lacus nec metus. Integer nunc posuere ut hendrerit semper vel class. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Mus donec rhoncus eros lobortis nulla molestie mattis. Purus est efficitur laoreet mauris pharetra vestibulum fusce. Sodales consequat magna ante condimentum neque at luctus. Ligula congue sollicitudin erat viverra ac tincidunt nam. Lectus commodo augue arcu dignissim velit aliquam imperdiet. Cras eleifend turpis fames primis vulputate ornare sagittis. Libero feugiat tristique accumsan maecenas potenti ultricies habitant. Cubilia curae hac habitasse platea dictumst lorem ipsum. Faucibus ex sapien vitae pellentesque sem placerat in. Tempus leo eu aenean sed diam urna tempor.</p>
+            </div>
+            <img src="images/travel.png" alt="travel">
+          </div>
+        </div>
+    </section>
     <section class="carousel-section">
         <h2 class="carousel-title">KASUTAJAD SOOVITAVAD KÜLASTADA</h2>
         <div class="carousel">
@@ -70,14 +80,152 @@
             <button class="carousel-button next">&#10095;</button>
         </div>
     </section>
-    <section>
-        <div class="info">
-          <div class="info-inner">
-            <h2>Info</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Placerat in id cursus mi pretium tellus duis. Urna tempor pulvinar vivamus fringilla lacus nec metus. Integer nunc posuere ut hendrerit semper vel class. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Mus donec rhoncus eros lobortis nulla molestie mattis. Purus est efficitur laoreet mauris pharetra vestibulum fusce. Sodales consequat magna ante condimentum neque at luctus. Ligula congue sollicitudin erat viverra ac tincidunt nam. Lectus commodo augue arcu dignissim velit aliquam imperdiet. Cras eleifend turpis fames primis vulputate ornare sagittis. Libero feugiat tristique accumsan maecenas potenti ultricies habitant. Cubilia curae hac habitasse platea dictumst lorem ipsum. Faucibus ex sapien vitae pellentesque sem placerat in. Tempus leo eu aenean sed diam urna tempor.</p>
-            <img src="images/travel.png" alt="travel">
+    <div class="airplane-image">
+      <img src="images/airplane.jpg" alt="airplane">
+    </div>
+    <section class="feedback-section">
+      <div class="feedback-container">
+        <h2 class="feedback-title">JAGA OMA REISIKOGEMUST</h2>
+        <form class="feedback-form" id="feedbackForm">
+          <div class="form-grid">
+            <div class="form-column">
+              <div class="form-group">
+                <label for="country">Riik:</label>
+                <select id="country" name="country" required>
+                  <option value="">Vali riik</option>
+                  <option value="eesti">Eesti</option>
+                  <option value="soome">Soome</option>
+                  <option value="rootsi">Rootsi</option>
+                  <option value="norra">Norra</option>
+                  <option value="taani">Taani</option>
+                  <option value="saksamaa">Saksamaa</option>
+                  <option value="prantsusmaa">Prantsusmaa</option>
+                  <option value="itaalia">Itaalia</option>
+                  <option value="hispaania">Hispaania</option>
+                  <option value="kreeka">Kreeka</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Külastamise periood:</label>
+                <div class="date-range">
+                  <div class="date-input">
+                    <label for="startDate">Algus:</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                  </div>
+                  <div class="date-input">
+                    <label for="endDate">Lõpp:</label>
+                    <input type="date" id="endDate" name="endDate" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="experience">Kokkuvõte reisist:</label>
+                <textarea id="experience" name="experience" rows="4" required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="recommendations">Soovitused teistele reisijatele:</label>
+                <textarea id="recommendations" name="recommendations" rows="3"></textarea>
+              </div>
             </div>
-        </div>
-      </section>
+
+            <div class="form-column">
+              <div class="rating-group">
+                <label>Hinnang:</label>
+                <div class="rating-criteria">
+                  <div class="rating-item">
+                    <span>Reisi maksumus</span>
+                    <div class="stars" data-criteria="cost">
+                      <span class="star" data-value="1">★</span>
+                      <span class="star" data-value="2">★</span>
+                      <span class="star" data-value="3">★</span>
+                      <span class="star" data-value="4">★</span>
+                      <span class="star" data-value="5">★</span>
+                    </div>
+                  </div>
+                  <div class="rating-item">
+                    <span>Toit ja joogid</span>
+                    <div class="stars" data-criteria="food">
+                      <span class="star" data-value="1">★</span>
+                      <span class="star" data-value="2">★</span>
+                      <span class="star" data-value="3">★</span>
+                      <span class="star" data-value="4">★</span>
+                      <span class="star" data-value="5">★</span>
+                    </div>
+                  </div>
+                  <div class="rating-item">
+                    <span>Vaatamisväärsused</span>
+                    <div class="stars" data-criteria="sights">
+                      <span class="star" data-value="1">★</span>
+                      <span class="star" data-value="2">★</span>
+                      <span class="star" data-value="3">★</span>
+                      <span class="star" data-value="4">★</span>
+                      <span class="star" data-value="5">★</span>
+                    </div>
+                  </div>
+                  <div class="rating-item">
+                    <span>Turvalisus</span>
+                    <div class="stars" data-criteria="safety">
+                      <span class="star" data-value="1">★</span>
+                      <span class="star" data-value="2">★</span>
+                      <span class="star" data-value="3">★</span>
+                      <span class="star" data-value="4">★</span>
+                      <span class="star" data-value="5">★</span>
+                    </div>
+                  </div>
+                  <div class="rating-item">
+                    <span>Külalislahkus</span>
+                    <div class="stars" data-criteria="hospitality">
+                      <span class="star" data-value="1">★</span>
+                      <span class="star" data-value="2">★</span>
+                      <span class="star" data-value="3">★</span>
+                      <span class="star" data-value="4">★</span>
+                      <span class="star" data-value="5">★</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="photo-upload">
+                <label>Lisa fotod:</label>
+                <div class="photo-preview-container">
+                  <div class="photo-preview" id="photoPreview1">
+                    <input type="file" id="photo1" name="photo1" accept="image/*" class="photo-input">
+                    <div class="photo-placeholder">
+                      <span class="material-icons-round">add_photo_alternate</span>
+                      <span>Lisa foto 1</span>
+                    </div>
+                    <img class="preview-image" style="display: none;">
+                    <button type="button" class="remove-photo" style="display: none;">×</button>
+                  </div>
+                  <div class="photo-preview" id="photoPreview2">
+                    <input type="file" id="photo2" name="photo2" accept="image/*" class="photo-input">
+                    <div class="photo-placeholder">
+                      <span class="material-icons-round">add_photo_alternate</span>
+                      <span>Lisa foto 2</span>
+                    </div>
+                    <img class="preview-image" style="display: none;">
+                    <button type="button" class="remove-photo" style="display: none;">×</button>
+                  </div>
+                  <div class="photo-preview" id="photoPreview3">
+                    <input type="file" id="photo3" name="photo3" accept="image/*" class="photo-input">
+                    <div class="photo-placeholder">
+                      <span class="material-icons-round">add_photo_alternate</span>
+                      <span>Lisa foto 3</span>
+                    </div>
+                    <img class="preview-image" style="display: none;">
+                    <button type="button" class="remove-photo" style="display: none;">×</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">Saada</button>
+        </form>
+      </div>
+    </section>
 </body>
 </html>
