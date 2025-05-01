@@ -507,7 +507,7 @@
   height: 24px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.8);
-  color: #ff4444;
+  color: #e63946;
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
@@ -518,7 +518,7 @@
   transition: all 0.3s ease;
 }
 .remove-photo:hover {
-  background-color: #ff4444;
+  background-color: #e63946;
   color: white;
 }
 
@@ -536,6 +536,61 @@
 }
 .submit-btn:hover {
   transform: translateY(-2px);
+}
+
+.footer {
+  background-color: #758BFD;
+  color: rgb(255, 255, 255);
+  padding: 3rem 0 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.footer-container {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: rgb(255, 255, 255);
+}
+.footer-section a, .footer-section p {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  line-height: 1.8;
+}
+.footer-section a:hover, .footer-section p:hover {
+  color: #fef559;
+  transition: color 0.2s ease;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.social-icons a {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+.social-icons a:hover {
+  color: #fef559;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /*# sourceMappingURL=ryhmatoo.css.map */

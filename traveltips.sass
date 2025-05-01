@@ -1,6 +1,11 @@
 $primary-color: #758BFD
 $secondary: #DFE8FF
 $surface: rgb(255, 255, 255)
+$red: #e63946
+$yellow: #fef559
+$white: #ffffff
+$bg-light: #f9f9f9
+$shadow: rgba(0, 0, 0, 0.1)
 $font-family: 'Raleway', sans-serif
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Lexend+Exa:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
@@ -98,3 +103,245 @@ $font-family: 'Raleway', sans-serif
 
 .nav-item:hover::before
   transform: scaleX(1)
+
+.tips-image
+  position: relative
+  width: 100%
+  overflow: hidden
+
+  img
+    margin-top: 15px
+    width: 100%
+    height: 580px
+    display: block
+    object-fit: cover
+
+  &::before, &::after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    height: 40px
+    z-index: 1
+
+  &::before
+    top: 0
+    background: linear-gradient(to bottom, $secondary, transparent)
+
+  &::after
+    bottom: 0
+    background: linear-gradient(to top, $secondary, transparent)
+
+.hero
+  position: absolute
+  top: 50%
+  right: 5%
+  transform: translateY(-50%)
+  z-index: 2
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  height: auto
+
+.hero-content
+  width: 100%
+  border-radius: 12px
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  padding-right: 15px
+  z-index: 2
+  position: relative
+  background: linear-gradient(135deg, $white 40%, $bg-light 100%)
+
+  .text-box
+    max-width: 400px
+    padding: 40px
+    background-color: rgba($white, 0.93)
+    border-radius: 12px
+    box-shadow: 0 4px 20px $shadow
+
+    h1
+      font-size: 2em
+      color: $red
+      margin-bottom: 10px
+
+    p
+      font-size: 1em
+      color: #333
+      line-height: 1.6
+      margin-bottom: 20px
+
+    .btn
+      padding: 10px 20px
+      font-size: 1em
+      color: $white
+      background-color: $red
+      border: none
+      border-radius: 6px
+      box-shadow: 4px 4px 0 $shadow
+      cursor: pointer
+      transition: all 0.2s ease
+
+      &:hover
+        transform: scale(1.05)
+
+@media (max-width: 768px)
+  .hero
+    position: static
+    transform: none
+    top: auto
+    right: auto
+
+  .hero-content
+    padding: 20px
+    justify-content: center
+
+    .text-box
+      margin-top: -50px
+      background-color: $white
+
+.tips-container 
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  width: 100%
+  box-sizing: border-box
+  justify-content: center
+  gap: 20px
+  padding: 20px
+
+.tips-container .tip 
+  border: 1px solid #ccc
+  border-radius: 10px
+  padding: 20px
+  text-align: center
+  position: relative
+  border: 2px solid $secondary
+  border-radius: 0.5rem
+  cursor: pointer
+  transition: all 0.3s ease
+  background-color: $secondary
+
+  &:hover
+    border-color: $primary-color
+    transform: translateY(-2px)
+
+  &.active
+    background-color: $primary-color
+    border-color: $primary-color
+    color: $surface
+
+    p
+      color: $surface
+
+
+.tip-icon
+  margin-top: 50px
+  width: 100px
+  height: 100px
+  margin-bottom: 10px
+
+.tips
+  padding: 2rem
+  background-color: $secondary  
+
+.tips-title
+  color: $primary-color
+  font-size: 1.8rem
+  margin-bottom: 1.5rem
+  text-align: center
+
+.tips-list
+  list-style: none
+  padding: 0
+  display: grid
+  gap: 1rem
+
+.tip-item
+  padding: 1rem
+  transition: all 0.3s ease
+  position: relative
+  padding-left: 2rem
+  font-size: 25px
+
+  &::before
+    content: '★'
+    color: $yellow
+    font-size: 1.5rem
+
+.video-section
+  padding: 40px 20px
+  background-color: $surface
+  text-align: center
+
+  h2
+    font-size: 2em
+    margin-bottom: 30px
+    color: $primary-color
+
+.video-grid
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  gap: 20px
+  justify-items: center
+
+  iframe
+    width: 100%
+    height: 200px
+    max-width: 400px
+    border-radius: 10px
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
+
+.footer
+  background-color: $primary-color
+  color: $surface
+  padding: 3rem 0 1rem
+  font-family: $font-family
+
+.footer-container
+  justify-items: center
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+  gap: 2rem
+  max-width: 1200px
+  margin: 0 auto
+  padding-bottom: 2rem
+
+.footer-section
+  h4
+    font-size: 20px
+    margin-bottom: 1rem
+    color: $surface
+
+  a, p
+    font-size: 20px
+    display: flex
+    color: $surface
+    text-decoration: none
+    line-height: 1.8
+
+    &:hover
+      color: $yellow
+      transition: color 0.2s ease
+
+.social-icons
+  display: flex
+  gap: 1rem
+  margin-top: 1rem
+
+  a
+    color: $surface
+    font-size: 1.5rem
+    transition: transform 0.2s ease
+
+    &:hover
+      color: $yellow
+      transform: scale(1.2)
+
+.footer-bottom
+  margin-top: 2rem
+  text-align: center
+  font-size: 0.85rem
+  color: rgba($surface, 0.8)
+
+  
