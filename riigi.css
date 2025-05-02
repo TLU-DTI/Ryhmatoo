@@ -1,22 +1,31 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .nav-container {
-  background-color: rgb(117, 139, 253);
+  background-color: #758bfd;
   padding: 1.25rem 2rem;
 }
 
 .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
 .menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 3.5rem;
 }
@@ -24,22 +33,34 @@
 .nav-item {
   position: relative;
   cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   color: #ffffff;
+  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
 .nav-icon {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .nav-text {
@@ -48,38 +69,50 @@
   letter-spacing: 0.5px;
   color: #ffffff;
   opacity: 1;
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .logo .nav-text {
   font-size: 1.5rem;
   font-weight: 700;
   opacity: 1;
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
   color: #ffffff;
 }
+
 .logo::before {
   display: none;
 }
+
 .logo .nav-link {
   color: #ffffff;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 0.5rem;
 }
+
 .logo .nav-icon {
   margin-bottom: 0;
   font-size: 1.8rem;
 }
+
 .logo:hover .nav-icon {
   color: #ffffff;
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
 }
+
 .logo:hover .nav-text {
   color: #ffffff;
 }
 
 .nav-item:hover .nav-icon {
-  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .nav-item:active .nav-icon {
@@ -87,20 +120,26 @@
 }
 
 .nav-item::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -8px;
   left: 0;
   width: 100%;
   height: 2px;
   background: #ffffff;
-  transform: scaleX(0);
-  transform-origin: center;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .nav-item:hover::before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 body {
@@ -109,77 +148,109 @@ body {
 
 h1 {
   color: #758BFD;
-  font-family: "Monospace";
+  font-family: 'Monospace';
   font-size: 70px;
-  text-shadow: 3px 3px 6px rgb(180, 188, 227), 0 0 25px rgba(173, 160, 240, 0.6);
+  text-shadow: 3px 3px 6px #b4bce3, 0 0 25px rgba(173, 160, 240, 0.6);
   text-align: center;
   margin-top: 30px;
 }
 
-.styled-button, .styled-button-count, .styled-button-home, .styled-button-about {
+.styled-button, .styled-button-about, .styled-button-home, .styled-button-count {
   padding: 10px 15px;
   font-size: 16px;
-  background-color: rgb(54, 51, 52);
+  background-color: #363334;
   color: white;
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   position: fixed;
   top: 20px;
-  font-family: "Monospace";
+  font-family: 'Monospace';
 }
-.styled-button:hover, .styled-button-count:hover, .styled-button-home:hover, .styled-button-about:hover {
-  background-color: rgb(39, 37, 38);
+
+.styled-button:hover, .styled-button-about:hover, .styled-button-home:hover, .styled-button-count:hover {
+  background-color: #272526;
 }
 
 .styled-button-about {
   left: 6%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .styled-button-home {
   left: 14%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .styled-button-count {
   left: 22%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .country-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
   margin-top: 50px;
 }
 
 .country-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   width: 180px;
   margin: 10px;
 }
+
 .country-card img {
   width: 170px;
   height: 170px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   border: 2px solid #758BFD;
 }
+
 .country-card img:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
+
 .country-card h3 {
   margin-top: 10px;
   font-size: 18px;
   color: #000000;
 }
 
+.footer {
+  text-align: center;
+  pdding: 2em;
+  font-size: 1.1em;
+  color: black;
+  margin: 30px;
+}
 /*# sourceMappingURL=riigi.css.map */
