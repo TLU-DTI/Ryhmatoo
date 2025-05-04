@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
 
@@ -13,13 +14,21 @@
 }
 
 .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
 .menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 3.5rem;
 }
@@ -27,83 +36,113 @@
 .nav-item {
   position: relative;
   cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
+  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
 .nav-icon {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .nav-text {
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.5px;
-  color: rgb(255, 255, 255);
+  color: white;
   opacity: 1;
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .logo .nav-text {
   font-size: 1.7rem;
   font-weight: 600;
   opacity: 1;
-  transform: none;
-  color: rgb(255, 255, 255);
+  -webkit-transform: none;
+          transform: none;
+  color: white;
 }
+
 .logo::before {
   display: none;
 }
+
 .logo .nav-link {
-  color: rgb(255, 255, 255);
-  flex-direction: row;
+  color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 0.5rem;
 }
+
 .logo .nav-icon {
   margin-bottom: 0;
   font-size: 2rem;
 }
+
 .logo:hover .nav-icon {
-  color: rgb(255, 255, 255);
-  transform: none;
+  color: white;
+  -webkit-transform: none;
+          transform: none;
 }
+
 .logo:hover .nav-text {
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .nav-item:hover .nav-icon {
-  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .nav-item:active .nav-icon {
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .nav-item::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -8px;
   left: 0;
   width: 100%;
   height: 2px;
-  background: rgb(255, 255, 255);
-  transform: scaleX(0);
-  transform-origin: center;
+  background: white;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .nav-item:hover::before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .tips-image {
@@ -111,27 +150,34 @@
   width: 100%;
   overflow: hidden;
 }
+
 .tips-image img {
   margin-top: 15px;
   width: 100%;
   height: 580px;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .tips-image::before, .tips-image::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
   height: 40px;
   z-index: 1;
 }
+
 .tips-image::before {
   top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#DFE8FF), to(transparent));
   background: linear-gradient(to bottom, #DFE8FF, transparent);
 }
+
 .tips-image::after {
   bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#DFE8FF), to(transparent));
   background: linear-gradient(to top, #DFE8FF, transparent);
 }
 
@@ -139,43 +185,61 @@
   position: absolute;
   top: 50%;
   right: 5%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: auto;
 }
 
 .hero-content {
   width: 100%;
   border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-right: 15px;
   z-index: 2;
   position: relative;
   background: linear-gradient(135deg, #ffffff 40%, #f9f9f9 100%);
 }
+
 .hero-content .text-box {
   max-width: 400px;
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.93);
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
 .hero-content .text-box h1 {
   font-size: 2em;
   color: #e63946;
   margin-bottom: 10px;
 }
+
 .hero-content .text-box p {
   font-size: 1em;
   color: #333;
   line-height: 1.6;
   margin-bottom: 20px;
 }
+
 .hero-content .text-box .btn {
   padding: 10px 20px;
   font-size: 1em;
@@ -183,36 +247,49 @@
   background-color: #e63946;
   border: none;
   border-radius: 6px;
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
+
 .hero-content .text-box .btn:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
   .hero {
     position: static;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
     top: auto;
     right: auto;
   }
   .hero-content {
     padding: 20px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .hero-content .text-box {
     margin-top: -50px;
     background-color: #ffffff;
   }
 }
+
 .tips-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   width: 100%;
-  box-sizing: border-box;
-  justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
   padding: 20px;
 }
@@ -226,20 +303,25 @@
   border: 2px solid #DFE8FF;
   border-radius: 0.5rem;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: #DFE8FF;
 }
+
 .tips-container .tip:hover {
   border-color: #758BFD;
-  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
+
 .tips-container .tip.active {
   background-color: #758BFD;
   border-color: #758BFD;
-  color: rgb(255, 255, 255);
+  color: white;
 }
+
 .tips-container .tip.active p {
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .tip-icon {
@@ -264,28 +346,32 @@
 .tips-list {
   list-style: none;
   padding: 0;
+  display: -ms-grid;
   display: grid;
   gap: 1rem;
 }
 
 .tip-item {
   padding: 1rem;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
   padding-left: 2rem;
   font-size: 25px;
 }
+
 .tip-item::before {
-  content: "★";
+  content: '★';
   color: #fef559;
   font-size: 1.5rem;
 }
 
 .video-section {
   padding: 40px 20px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   text-align: center;
 }
+
 .video-section h2 {
   font-size: 2em;
   margin-bottom: 30px;
@@ -293,30 +379,37 @@
 }
 
 .video-grid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   justify-items: center;
 }
+
 .video-grid iframe {
   width: 100%;
   height: 200px;
   max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .footer {
   background-color: #758BFD;
-  color: rgb(255, 255, 255);
+  color: white;
   padding: 3rem 0 1rem;
   font-family: "Raleway", sans-serif;
+  margin-top: 30px;
 }
 
 .footer-container {
   justify-items: center;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -326,17 +419,22 @@
 .footer-section h4 {
   font-size: 20px;
   margin-bottom: 1rem;
-  color: rgb(255, 255, 255);
+  color: white;
 }
+
 .footer-section a, .footer-section p {
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  color: rgb(255, 255, 255);
+  color: white;
   text-decoration: none;
   line-height: 1.8;
 }
+
 .footer-section a:hover, .footer-section p:hover {
   color: #fef559;
+  -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
@@ -346,5 +444,4 @@
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.8);
 }
-
 /*# sourceMappingURL=traveltips.css.map */

@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Lexend+Exa:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 .nav-container {
@@ -74,7 +76,7 @@
 }
 
 .logo .nav-text {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   opacity: 1;
   -webkit-transform: none;
@@ -148,7 +150,7 @@ body {
 
 h1 {
   color: #758BFD;
-  font-family: 'Monospace';
+  font-family: "Raleway", sans-serif;
   font-size: 70px;
   text-shadow: 3px 3px 6px #b4bce3, 0 0 25px rgba(173, 160, 240, 0.6);
   text-align: center;
@@ -167,7 +169,7 @@ h1 {
   transition: background-color 0.3s;
   position: fixed;
   top: 20px;
-  font-family: 'Monospace';
+  font-family: "Raleway", sans-serif;
 }
 
 .styled-button:hover, .styled-button-about:hover, .styled-button-home:hover, .styled-button-count:hover {
@@ -247,10 +249,50 @@ h1 {
 }
 
 .footer {
+  background-color: #758bfd;
+  color: #ffffff;
+  padding: 3rem 0 1rem;
+  font-family: "Raleway", sans-serif;
+  margin-top: 30px;
+}
+
+.footer-container {
+  justify-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer-section a, .footer-section p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1.8;
+}
+
+.footer-section a:hover, .footer-section p:hover {
+  color: #fef559;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
   text-align: center;
-  pdding: 2em;
-  font-size: 1.1em;
-  color: black;
-  margin: 30px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 /*# sourceMappingURL=riigi.css.map */

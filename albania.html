@@ -1,53 +1,36 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Albaania</title>
-  <link rel="stylesheet" href="albania.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="albania.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
   <nav class="nav-container">
     <ul class="nav-menu">
       <li class="nav-item logo">
-        <a href="ryhmatoo.html" class="nav-link">
+        <a href="homepage.html" class="nav-link">
           <span class="material-icons-round nav-icon">travel_explore</span>
           <span class="nav-text logo-text">Reisimine</span>
         </a>
       </li>
-
       <div class="menu-items">
-        <li class="nav-item">
-          <a href="riigi.html" class="nav-link">
-            <span class="material-icons-round nav-icon">public</span>
-            <span class="nav-text">Riigid</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <span class="material-icons-round nav-icon">lightbulb</span> 
-            <span class="nav-text">Reisinõuanded</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <span class="material-icons-round nav-icon">people</span> 
-            <span class="nav-text">Meie kohta</span>
-          </a>
-        </li>
+        <li class="nav-item"><a href="riigi.html" class="nav-link"><span class="material-icons-round nav-icon">public</span><span class="nav-text">Riigid</span></a></li>
+        <li class="nav-item"><a href="traveltips.html" class="nav-link"><span class="material-icons-round nav-icon">lightbulb</span><span class="nav-text">Reisinõuanded</span></a></li>
+        <li class="nav-item"><a href="aboutus.html" class="nav-link"><span class="material-icons-round nav-icon">people</span><span class="nav-text">Meie kohta</span></a></li>
       </div>
     </ul>
   </nav>
 
-  <h1>Albaania 🇦🇱</h1>
+  <h1>Albaania</h1>
 
   <div class="container">
-    <h2>📌 Üldinfo</h2>
-    <div class="info-carousel-wrapper">
-      <div class="card">
+    <section class="section-content">
+      <div class="text">
+        <h2>Üldinfo</h2>
         <ul>
           <li><strong>Pealinn:</strong> Tirana</li>
           <li><strong>Keel:</strong> Albaania</li>
@@ -57,101 +40,153 @@
           <li><strong>Pindala:</strong> 28,748 km²</li>
         </ul>
       </div>
-
-      <div class="carousel">
-        <div class="carousel-track">
-          <img src="images/al1.jpg" alt="Gjirokastër">
-          <img src="images/al2.jpg" alt="Albaania rannik">
-          <img src="images/al3.jpg" alt="Berat">
-          <img src="images/al4.jpg" alt="Berat">
-          <img src="images/al5.jpg" alt="Berat">
-
-
+      <div class="image">
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="images/al1.jpg" alt="Gjirokastër">
+            <img src="images/al2.jpg" alt="Albaania rannik">
+            <img src="images/al3.jpg" alt="Berat">
+            <img src="images/al4.jpg" alt="Berat">
+            <img src="images/al5.jpg" alt="Berat">
+          </div>
+          <button class="carousel-button prev">&#10094;</button>
+          <button class="carousel-button next">&#10095;</button>
         </div>
-        <button class="carousel-button prev">&#10094;</button>
-        <button class="carousel-button next">&#10095;</button>
       </div>
-    </div>
-      
+    </section>
 
-    <h2>🏔️ Miks minna?</h2>
-    <div class="card">
-      <ul>
-        <li>✨ Hämmastav loodus</li>
-        <li>🌊 Selge meri, kanjonid ja mäed</li>
-        <li>💸 Madalamad hinnad kui Euroopas</li>
-        <li>🤝 Äärmiselt sõbralikud kohalikud</li>
-        <li>🏛️ Ajaloolised paigad ja varemed</li>
-      </ul>
-    </div>
+    <section class="section-content reverse">
+      <div class="image">
+        <img src="images/al6.jpg" alt="Miks minna" />
+      </div>
+      <div class="text">
+        <h2>Miks minna?</h2>
+        <ul class="no-bullets">
+          <li>✨ Hämmastav loodus</li>
+          <li>🌊 Selge meri, kanjonid ja mäed</li>
+          <li>💸 Madalamad hinnad kui Euroopas</li>
+          <li>🤝 Äärmiselt sõbralikud kohalikud</li>
+          <li>🏛️ Ajaloolised paigad ja varemed</li>
+        </ul>
+      </div>
+    </section>
 
-    <h2>🏙️ Peamised linnad</h2>
-    <div class="card">
-      <ul>
-        <li><strong>Tirana</strong> — loominguline pealinn</li>
-        <li><strong>Shkodër</strong> — järve ja mägedega</li>
-        <li><strong>Saranda</strong> — rannikulinn</li>
-        <li><strong>Berat ja Gjirokastër</strong> — UNESCO linnad</li>
-      </ul>
-    </div>
+    <section class="section-content">
+      <div class="text">
+        <h2>Peamised linnad</h2>
+        <ul class="no-bullets">
+          <li><strong>Tirana</strong> — loominguline pealinn</li>
+          <li><strong>Shkodër</strong> — järve ja mägedega</li>
+          <li><strong>Saranda</strong> — rannikulinn</li>
+          <li><strong>Berat ja Gjirokastër</strong> — UNESCO linnad</li>
+        </ul>
+      </div>
+      <div class="image">
+        <img src="images/al7.jpg" alt="Linnad Albaanias" />
+      </div>
+    </section>
+  
 
-    <h2>🍽️ Mida proovida</h2>
-    <div class="card">
-      <ul>
-        <li><strong>Tavë Kosi</strong> — lambaliha jogurtiga</li>
-        <li><strong>Färgese</strong> — köögiviljad ja juust</li>
-        <li>Baklava, burek, rakia</li>
-        <li>Mereannid otse rannikult</li>
-      </ul>
-    </div>
+    <section class="section-content reverse">
+      <div class="image">
+        <img src="images/al8.jpg" alt="Albaania toit" />
+      </div>
+      <div class="text">
+        <h2>Mida proovida</h2>
+        <ul class="no-bullets">
+          <li><strong>Tavë Kosi</strong> — lambaliha jogurtiga</li>
+          <li><strong>Färgese</strong> — köögiviljad ja juust</li>
+          <li>Baklava, burek, rakia</li>
+          <li>Mereannid otse rannikult</li>
+        </ul>
+      </div>
+    </section>
 
-    <h2>💰 Hinnad</h2>
-    <div class="card">
-      <ul>
-        <li>☕ Kohv: 0.5–1 €</li>
-        <li>🍽️ Lõuna: 4–7 €</li>
-        <li>🏨 Majutus: alates 10–25 €</li>
-        <li>🚕 Transport: odav</li>
-      </ul>
-    </div>
+    <section class="section-content">
+      <div class="text">
+        <h2>Hinnad</h2>
+        <ul class="no-bullets">
+          <li>☕ Kohv: 0.5–1 €</li>
+          <li>🍽️ Lõuna: 4–7 €</li>
+          <li>🏨 Majutus: alates 10–25 €</li>
+          <li>🚕 Transport: odav</li>
+        </ul>
+      </div>
+      <div class="image">
+        <img src="images/al9.jpg" alt="Hinnad Albaanias" />
+      </div>
+    </section>
 
-    <h2>✅ Plussid</h2>
-      <div class="card">
-        <ul>
+    <section class="section-content reverse">
+      <div class="image">
+        <img src="images/al10.jpg" alt="Plussid" />
+      </div>
+      <div class="text">
+        <h2>Plussid</h2>
+        <ul class="no-bullets">
           <li>Loodus</li>
           <li>Madalad hinnad</li>
           <li>Maitsev toit</li>
           <li>Turistide vähesus</li>
         </ul>
       </div>
+    </section>
 
-    <h2>❗Miinused</h2>
-      <div class="card">
-          <li> Halvad teed kohtades</li>
-          <li> Inglise keel pole igal pool levinud</li>
-          <li> Vahel aeglane internet</li>
+    <section class="section-content">
+      <div class="text">
+        <h2>Miinused</h2>
+        <ul class="no-bullets">
+          <li>Halvad teed kohtades</li>
+          <li>Inglise keel pole igal pool levinud</li>
+          <li>Vahel aeglane internet</li>
         </ul>
       </div>
-    </div>
+      <div class="image">
+        <img src="images/al3.jpg" alt="Miinused" />
+      </div>
+    </section>
 
-    <h2>🧭 Sobib kellele?</h2>
 
-    <div class="card tags">
-      <span>Loodusesõpradele</span>
-      <span>Rannapuhkuseks</span>
-      <span>Ajaloo huvilistele</span>
-      <span>Digiränduritele</span>
-      <span>Balkani avastajatele</span>
+    <section class="section-content reverse">
+    <div class="image">
+      <img src="images/al2.jpg" alt="Sobib kellele" />
     </div>
+    <div class="text">
+      <h2>Sobib kellele?</h2>
+      <ul class="no-bullets tags">
+        <li>Loodusesõpradele</li>
+        <li>Rannapuhkuseks</li>
+        <li>Ajaloo huvilistele</li>
+        <li>Digiränduritele</li>
+        <li>Balkani avastajatele</li>
+      </ul>
+    </div>
+  </section>
   </div>
 
-    <div class="footer">
-      <footer> 
-        Armastusega tehtud 🇦🇱 | Avastades Albaaniat
-      </footer>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Meist</h4>
+        <a href="aboutus.html">Meie kohta</a>
+        <a href="#">Blogi</a>
+      </div>
+      <div class="footer-section">
+        <h4>Navigatsioon</h4>
+        <a href="riigi.html">Riigid</a>
+        <a href="traveltips.html">Reisinõuanded</a>
+      </div>
+      <div class="footer-section">
+        <h4>Kontaktid</h4>
+        <p>info@reis.ee</p>
+        <p>+372 5555 1234</p>
+      </div>
     </div>
+    <div class="footer-bottom">
+      &copy; 2025 Reis.ee — kõik õigused kaitstud.
+    </div>
+  </footer>
+  <script src="albania.js"></script>
 
-    
-    <script src="albania.js"></script>
 </body>
 </html>

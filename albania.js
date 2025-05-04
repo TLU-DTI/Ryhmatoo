@@ -21,7 +21,7 @@
     updateCarousel();
   });
 
-  // обновление при загрузке, на всякий случай
+
   window.addEventListener('resize', updateCarousel);
 
 
