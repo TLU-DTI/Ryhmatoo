@@ -93,3 +93,12 @@ document.querySelector('.btn').addEventListener('click', () => {
       behavior: 'smooth'
     });
 });
+
+// Näpunäide tüüpi klõpsates kerib vastava näpunäidete listi juurde
+document.querySelectorAll('.tip').forEach(tip => {
+    tip.addEventListener('click', () => {
+      document.querySelector('#list').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+});

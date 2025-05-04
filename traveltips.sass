@@ -29,6 +29,16 @@ $font-family: 'Raleway', sans-serif
 .menu-items
   display: flex
   gap: 3.5rem
+  list-style: none
+  margin: 0
+  padding: 0
+
+  ul
+    display: flex
+    gap: 3.5rem
+    list-style: none
+    margin: 0
+    padding: 0
 
 .nav-item
   position: relative
@@ -187,6 +197,21 @@ $font-family: 'Raleway', sans-serif
         transform: scale(1.05)
 
 @media (max-width: 768px)
+  .nav-container
+    padding: 1rem
+
+  .menu-items
+    gap: 1.5rem
+
+    ul
+      gap: 1.5rem
+
+  .nav-text
+    font-size: 0.75rem
+
+  .logo .nav-text
+    font-size: 1.2rem
+
   .hero
     position: static
     transform: none
@@ -330,5 +355,54 @@ $font-family: 'Raleway', sans-serif
   text-align: center
   font-size: 0.85rem
   color: rgba($surface, 0.8)
+
+@media (max-width: 480px)
+  .nav-menu
+    flex-direction: column
+    gap: 1rem
+
+  .menu-items
+    flex-direction: column
+    gap: 1rem
+    align-items: center
+
+    ul
+      flex-direction: column
+      gap: 1rem
+      align-items: center
+
+  .nav-item
+    width: 100%
+    text-align: center
+
+  .tips-image img
+    height: 300px
+
+  .hero-content .text-box
+    padding: 1rem
+    margin-top: -20px
+
+    h1
+      font-size: 1.5rem
+
+    p
+      font-size: 0.9rem
+
+  .tips-container
+    grid-template-columns: 1fr
+    gap: 10px
+    padding: 10px
+
+  .tip-icon
+    width: 60px
+    height: 60px
+    margin-top: 20px
+
+  .tip-item
+    font-size: 18px
+    padding-left: 1.2rem
+
+  .video-grid iframe
+    height: 160px
 
   
