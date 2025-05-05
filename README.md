@@ -7,4 +7,8 @@ Lisaks on veebilehel olemas reisinõuannete leht, mis aitab kasutajat nii reisi 
 Kasutajad saavad samuti jagada oma isiklikke kogemusi ja lugusid, et pakkuda teistele külastajatele veelgi usaldusväärsemat ja praktilisemat teavet. Projekti eesmärk on aidata reisijatel planeerida oma Euroopa reise lihtsalt, teadlikult ja nauditavalt.
 
 ## Projekti makettid:
-https://drive.google.com/file/d/1z0llSm7lW8ZflAcW51T3VeWfWvs4oyQr/view?usp=sharing
+HomePage: https://drive.google.com/file/d/1-zdm4RVi61i9QTbsFYCNsvE8MuxwM8b1/view?usp=sharing  
+AboutUsPage: https://drive.google.com/file/d/1iw9Ew2hcE_9oEg-TluguCWPcknn9K-rg/view?usp=sharing  
+CountriesListPage: https://drive.google.com/file/d/1z0llSm7lW8ZflAcW51T3VeWfWvs4oyQr/view?usp=sharing  
+CountryPage: https://drive.google.com/file/d/1CdNcKlLLsy8GFdR2F1Amy3s8ShasEnoh/view?usp=sharing  
+TipsPage: https://drive.google.com/file/d/1781GCwfwDG3TIDFXPyBXs68qsihRVQFm/view?usp=sharing  
