@@ -1,19 +1,10 @@
+# Projekti kirjeldus
 
-Leht "Meie kohta":
-<img width="710" alt="Meist" src="https://github.com/user-attachments/assets/2f34a363-2c42-4b84-bdd1-58d37e6dfdb6" />
+See projekt on veebileht, mis toimib mugava ja informatiivse teejuhina Euroopa riikide kohta. Kasutajad saavad leida üksikasjalikku teavet erinevate riikide kohta, sealhulgas vaatamisväärsused, majutus, köök, transport, viisarežiimi eripärad ja muud olulised aspektid. Igal riigil on oma eraldi leht, kust leiab ülevaate ning praktilist ja huvitavat teavet.
 
-Leht "Riik":
-<img width="720" alt="Riigi_Page" src="https://github.com/user-attachments/assets/c0d8b9df-2adf-4481-b3fe-2f37c466af4c" />
+Lisaks on veebilehel olemas reisinõuannete leht, mis aitab kasutajat nii reisi planeerimisel kui ka reisi jooksul. Seal jagatakse üldiseid soovitusi, näiteks kuidas reisiks valmistuda, mida kaasa võtta ning antakse näpunäiteid säästmiseks ja turvaliseks reisimiseks.
 
+Kasutajad saavad samuti jagada oma isiklikke kogemusi ja lugusid, et pakkuda teistele külastajatele veelgi usaldusväärsemat ja praktilisemat teavet. Projekti eesmärk on aidata reisijatel planeerida oma Euroopa reise lihtsalt, teadlikult ja nauditavalt.
 
-Leht "Riigid":
-<img width="804" alt="Riigid_Page" src="https://github.com/user-attachments/assets/758900c3-9992-411c-83d9-67ea4e0b28e6" />
-
-Leht "Home":
-![HomePage makett](https://github.com/user-attachments/assets/1854b678-c1d5-4b19-a6be-d478490dc806)
-
-Leht "Reisinõuaanded":
-![Tips page](https://github.com/user-attachments/assets/a212afb0-7fc2-462b-b352-025b26098c1d)
-
-
-
+## Projekti makettid:
+https://drive.google.com/file/d/1z0llSm7lW8ZflAcW51T3VeWfWvs4oyQr/view?usp=sharing
