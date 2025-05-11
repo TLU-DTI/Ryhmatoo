@@ -28,7 +28,7 @@
     bottom: 0
     background: linear-gradient(to top, $bly, transparent)
 
-.hero
+.box
   position: absolute
   top: 50%
   right: 5%
@@ -39,7 +39,7 @@
   justify-content: flex-end
   height: auto
 
-.hero-content
+.box-content
   width: 100%
   border-radius: 12px
   display: flex
@@ -83,13 +83,13 @@
         transform: scale(1.05)
 
 @media (max-width: 768px)
-  .hero
+  .box
     position: static
     transform: none
     top: auto
     right: auto
 
-  .hero-content
+  .box-content
     padding: 20px
     justify-content: center
 
@@ -191,7 +191,7 @@
   .tips-image img
     height: 300px
 
-  .hero-content .text-box
+  .box-content .text-box
     padding: 1rem
     margin-top: -20px
 

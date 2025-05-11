@@ -1,19 +1,36 @@
+// Ootame, kuni kogu HTML on laaditud
 document.addEventListener('DOMContentLoaded', () => {
+    // Valime karusselli raja (liikuv konteiner)
     const track = document.querySelector('.carousel-track');
+    
+    // Valime kõik slaidid karussellis
     const slides = document.querySelectorAll('.carousel-slide');
+    
+    // Nupud: eelmine ja järgmine
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
+    
+    // Karusselli konteiner
     const carousel = document.querySelector('.carousel');
     
+    // Aktiivne slaidi indeks
     let currentIndex = 0;
-    const slideWidth = slides[0].offsetWidth + 16; // 16px is the gap between slides
+
+    // Arvutame ühe slaidi laiuse koos vahega (16px)
+    const slideWidth = slides[0].offsetWidth + 16;
+    
+    // Kui mitu slaidi mahub nähtavale alale
     const visibleSlides = Math.floor(carousel.offsetWidth / slideWidth);
+    
+    // Maksimaalne indeks, kuhu saame liikuda
     const maxIndex = slides.length - visibleSlides;
 
+    // Funktsioon karusselli uuendamiseks (liigutab slaide)
     function updateCarousel() {
         track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
     }
     
+    // Liigu järgmisele slaidile
     function nextSlide() {
         if (currentIndex < maxIndex) {
             currentIndex++;
@@ -21,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
+    // Liigu eelmisele slaidile
     function prevSlide() {
         if (currentIndex > 0) {
             currentIndex--;
@@ -28,20 +46,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Prevent horizontal scrolling
+    // Keelame horisontaalse kerimise
     document.body.style.overflowX = 'hidden';
     
-    // Event listeners
+    // Nupuvajutuste kuulajad
     nextButton.addEventListener('click', nextSlide);
     prevButton.addEventListener('click', prevSlide);
 
-    // Adjust on window resize
+    // Uuendame karusselli akna suuruse muutumisel
     window.addEventListener('resize', () => {
-        currentIndex = 0; // Reset to prevent issues
+        currentIndex = 0; // Lähtesta, et vältida probleeme
         updateCarousel();
     });
 
-    // Star rating functionality
+    // Tähtede hindamise funktsionaalsus
     const stars = document.querySelectorAll('.star');
     const ratingValues = {};
 
@@ -50,21 +68,21 @@ document.addEventListener('DOMContentLoaded', () => {
             const criteria = this.closest('.stars').dataset.criteria;
             const value = parseInt(this.dataset.value);
             
-            // Reset all stars in this criteria
+            // Eemaldame aktiivsuse kõigilt tähtedelt selles kriteeriumis
             const criteriaStars = this.closest('.stars').querySelectorAll('.star');
             criteriaStars.forEach(s => s.classList.remove('active'));
             
-            // Activate stars up to clicked one
+            // Aktiveerime kõik tähed kuni klikitud tähiseni
             for (let i = 0; i < value; i++) {
                 criteriaStars[i].classList.add('active');
             }
             
-            // Store the rating
+            // Salvestame antud hinnangu
             ratingValues[criteria] = value;
         });
     });
 
-    // Photo upload functionality
+    // Fotode üleslaadimise funktsionaalsus
     const photoInputs = document.querySelectorAll('.photo-input');
     const photoPreviews = document.querySelectorAll('.photo-preview');
 
@@ -90,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Remove photo functionality
+    // Foto eemaldamise funktsionaalsus
     document.querySelectorAll('.remove-photo').forEach(button => {
         button.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -106,12 +124,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Form submission handling
+    // Tagasisidevormi töötlemine
     const feedbackForm = document.getElementById('feedbackForm');
     const startDateInput = document.getElementById('startDate');
     const endDateInput = document.getElementById('endDate');
     
-    // Validate date range
+    // Kuupäevavahemiku valideerimine
     function validateDateRange() {
         const startDate = new Date(startDateInput.value);
         const endDate = new Date(endDateInput.value);
@@ -130,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         
-        // Collect form data
+        // Kogume vormi andmed
         const formData = {
             country: document.getElementById('country').value,
             startDate: startDateInput.value,
@@ -141,18 +159,18 @@ document.addEventListener('DOMContentLoaded', () => {
             photos: Array.from(photoInputs).map(input => input.files[0])
         };
         
-        // Here you would typically send the data to a server
-        console.log('Form submitted:', formData);
+        // Tavaliselt saadetaks need andmed serverisse
+        console.log('Vorm saadetud:', formData);
         
-        // Show success message
+        // Näitame edukuse teadet
         alert('Aitäh tagasiside eest! Teie arvamus on saadetud.');
         
-        // Reset form
+        // Lähtestame vormi
         feedbackForm.reset();
         stars.forEach(star => star.classList.remove('active'));
         Object.keys(ratingValues).forEach(key => delete ratingValues[key]);
         
-        // Reset photos
+        // Lähtestame fotode eelvaated
         photoPreviews.forEach(preview => {
             const previewImage = preview.querySelector('.preview-image');
             const placeholder = preview.querySelector('.photo-placeholder');

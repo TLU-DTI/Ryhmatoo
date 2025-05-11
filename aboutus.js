@@ -1,3 +1,4 @@
+// Näitame edukuse teadet
 function showSuccessMessage(event) {
     event.preventDefault();
   

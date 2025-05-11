@@ -263,8 +263,7 @@ section {
 
 .image img {
   max-height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 section:nth-of-type(even) .section-content {
@@ -275,7 +274,7 @@ section:nth-of-type(odd) .section-content {
   background-color: #ffffff;
 }
 
-.hero {
+.introduction {
   padding-left: 2rem;
 }
 
@@ -342,4 +341,6 @@ section:nth-of-type(odd) .section-content {
     font-size: 14px;
     padding: 0.5rem;
   }
-}/*# sourceMappingURL=aboutus.css.map */
+}
+
+/*# sourceMappingURL=aboutus.css.map */

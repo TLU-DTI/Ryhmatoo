@@ -263,8 +263,7 @@ section {
 
 .image img {
   max-height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 body {
@@ -309,8 +308,7 @@ h1 {
   width: 170px;
   height: 170px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
   transition: transform 0.3s;
   border: 2px solid #758BFD;
@@ -387,4 +385,6 @@ h1 {
   .country-card h3 {
     font-size: 14px;
   }
-}/*# sourceMappingURL=riigi.css.map */
+}
+
+/*# sourceMappingURL=riigi.css.map */

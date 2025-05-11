@@ -1,13 +1,16 @@
 @import 'layout'
 
+// Rakendame erinevad taustavärvid section-elementidele vastavalt nende järjekorrale:
+// Iga paarisarvuline section (2., 4., 6. jne) saab taustavärvi muutujast $bly
 section:nth-of-type(even) .section-content
   background-color: $bly
 
+// Iga paaritu section (1., 3., 5. jne) saab taustavärvi muutujast $secondary
 section:nth-of-type(odd) .section-content
   background-color: $secondary
 
 
-.hero
+.introduction
   padding-left: 2rem
 
 .text
