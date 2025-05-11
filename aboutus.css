@@ -168,7 +168,8 @@ section {
 
 .image img {
   max-height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact-section {
@@ -325,6 +326,4 @@ section {
     font-size: 14px;
     padding: 0.5rem;
   }
-}
-
-/*# sourceMappingURL=aboutus.css.map */
+}/*# sourceMappingURL=aboutus.css.map */

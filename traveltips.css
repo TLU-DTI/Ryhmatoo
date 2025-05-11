@@ -126,7 +126,8 @@
   width: 100%;
   height: 580px;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .tips-image::before, .tips-image::after {
   content: "";
@@ -422,6 +423,4 @@
   .video-grid iframe {
     height: 160px;
   }
-}
-
-/*# sourceMappingURL=traveltips.css.map */
+}/*# sourceMappingURL=traveltips.css.map */

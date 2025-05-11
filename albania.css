@@ -171,7 +171,8 @@ section {
 .image img {
   max-width: 100%;
   max-height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
   box-shadow: 4px 4px 0 rgba(213, 213, 213, 0.8);
 }
@@ -191,7 +192,8 @@ section {
 .carousel img {
   width: 100%;
   flex-shrink: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 12px;
 }
 .carousel-button {
@@ -361,6 +363,4 @@ section {
     font-size: 0.8em;
     padding: 0.4em 0.8em;
   }
-}
-
-/*# sourceMappingURL=albania.css.map */
+}/*# sourceMappingURL=albania.css.map */

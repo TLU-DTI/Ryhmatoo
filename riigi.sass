@@ -6,6 +6,8 @@ $second: #758BFD
 $yellow: #fef559
 $font-family: 'Raleway', sans-serif
 
+@import 'footer'
+
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Lexend+Exa:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
 
 *
@@ -188,44 +190,6 @@ h1
     font-size: 18px
     color: #000000
 
-.footer
-  background-color: $primary-color
-  color: $surface
-  padding: 3rem 0 1rem
-  font-family: $font-family
-  margin-top: 30px
-
-.footer-container
-  justify-items: center
-  display: grid
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
-  gap: 2rem
-  max-width: 1200px
-  margin: 0 auto
-  padding-bottom: 2rem
-
-.footer-section
-  h4
-    font-size: 1.2rem
-    margin-bottom: 1rem
-    color: $surface
-
-  a, p
-    display: flex
-    color: $surface
-    text-decoration: none
-    line-height: 1.8
-
-    &:hover
-      color: $yellow
-      transition: color 0.2s ease
-
-.footer-bottom
-  margin-top: 2rem
-  text-align: center
-  font-size: 0.85rem
-  color: rgba($surface, 0.8)
-
 @media (max-width: 768px)
   .nav-container
     padding: 1rem
@@ -272,19 +236,6 @@ h1
 
     h3
       font-size: 16px
-
-  .footer-container
-    grid-template-columns: 1fr
-    gap: 1.5rem
-    text-align: center
-
-  .footer-section
-    h4
-      font-size: 18px
-
-    a, p
-      font-size: 16px
-      justify-content: center
 
 @media (max-width: 480px)
   .nav-menu
