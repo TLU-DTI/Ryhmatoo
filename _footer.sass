@@ -2,7 +2,7 @@
 
 .footer
     background-color: variables.$primary-color
-    color: $surface
+    color: variables.$secondary
     padding: 3rem 0 1rem
     font-family: variables.$font-family
     margin-top: 30px
@@ -17,26 +17,26 @@
     padding-bottom: 2rem
 
 .footer-section
-h4
-    font-size: 1.2rem
-    margin-bottom: 1rem
-    color: variables.$surface
+    h4
+        font-size: 1.2rem
+        margin-bottom: 1rem
+        color: variables.$secondary
 
-a, p
-    display: flex
-    color: $surface
-    text-decoration: none
-    line-height: 1.8
+    a, p
+        display: flex
+        color: variables.$secondary
+        text-decoration: none
+        line-height: 1.8
 
     &:hover
-        color: $yellow
+        color: variables.$yellow
         transition: color 0.2s ease
 
 .footer-bottom
     margin-top: 2rem
     text-align: center
     font-size: 0.85rem
-    color: rgba(variables.$surface, 0.8)
+    color: rgba(variables.$secondary, 0.8)
 
 @media (max-width: 768px)
     .footer-container

@@ -1,0 +1,40 @@
+@import 'variables'
+@import 'navbar'
+@import 'footer'
+@import 'responsive'
+@import 'mixins'
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Lexend+Exa:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
+
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: $font-family
+
+section
+  padding: 50px 0 0
+
+.section-content
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-between
+  flex-direction: row
+  gap: 50px
+  padding: 2rem
+  border-radius: 12px
+
+.section-content img
+  max-width: 100%
+  border-radius: 8px
+  box-shadow: 4px 4px 0 rgba(213, 213, 213, 0.8)
+
+.text,
+.image
+  flex: 1
+  padding: 20px
+
+.image img
+  max-height: 400px
+  object-fit: cover

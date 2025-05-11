@@ -1,118 +1,4 @@
-$primary-color: #758BFD
-$secondary: #DFE8FF
-$surface: rgb(255, 255, 255)
-$red: #e63946
-$yellow: #fef559
-$white: #ffffff
-$bg-light: #f9f9f9
-$shadow: rgba(0, 0, 0, 0.1)
-$font-family: 'Raleway', sans-serif
-
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Lexend+Exa:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
-
-*
-  margin: 0
-  padding: 0
-  box-sizing: border-box
-  font-family: $font-family
-
-.nav-container
-  background-color: $primary-color
-  padding: 1.25rem 2rem
-
-.nav-menu
-  display: flex
-  justify-content: space-between
-  align-items: center
-  list-style: none
-
-.menu-items
-  display: flex
-  gap: 3.5rem
-  list-style: none
-  margin: 0
-  padding: 0
-
-  ul
-    display: flex
-    gap: 3.5rem
-    list-style: none
-    margin: 0
-    padding: 0
-
-.nav-item
-  position: relative
-  cursor: pointer
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
-
-.nav-link
-  display: flex
-  flex-direction: column
-  align-items: center
-  text-decoration: none
-  color: $surface
-  transition: color 0.3s ease
-
-.nav-icon
-  font-size: 1.5rem
-  margin-bottom: 0.5rem
-  transition: transform 0.3s ease
-
-.nav-text
-  font-size: 0.85rem
-  font-weight: 700
-  letter-spacing: 0.5px
-  color: $surface
-  opacity: 1
-  transform: none
-
-.logo
-  .nav-text
-    font-size: 1.7rem
-    font-weight: 600
-    opacity: 1
-    transform: none
-    color: $surface
-
-  &::before
-    display: none
-
-  .nav-link
-    color: $surface
-    flex-direction: row
-    gap: 0.5rem
-
-  .nav-icon
-    margin-bottom: 0
-    font-size: 2rem
-
-  &:hover .nav-icon
-    color: $surface
-    transform: none
-
-  &:hover .nav-text
-    color: $surface
-
-.nav-item:hover .nav-icon
-  transform: translateY(-5px)
-
-.nav-item:active .nav-icon
-  color: $surface
-
-.nav-item::before
-  content: ''
-  position: absolute
-  bottom: -8px
-  left: 0
-  width: 100%
-  height: 2px
-  background: $surface
-  transform: scaleX(0)
-  transform-origin: center
-  transition: transform 0.3s ease
-
-.nav-item:hover::before
-  transform: scaleX(1)
+@import 'layout'
 
 .tips-image
   position: relative
@@ -136,11 +22,11 @@ $font-family: 'Raleway', sans-serif
 
   &::before
     top: 0
-    background: linear-gradient(to bottom, $secondary, transparent)
+    background: linear-gradient(to bottom, $bly, transparent)
 
   &::after
     bottom: 0
-    background: linear-gradient(to top, $secondary, transparent)
+    background: linear-gradient(to top, $bly, transparent)
 
 .hero
   position: absolute
@@ -162,12 +48,12 @@ $font-family: 'Raleway', sans-serif
   padding-right: 15px
   z-index: 2
   position: relative
-  background: linear-gradient(135deg, $white 40%, $bg-light 100%)
+  background: linear-gradient(135deg, $bly 40%, $bg-light 100%)
 
   .text-box
     max-width: 400px
     padding: 40px
-    background-color: rgba($white, 0.93)
+    background-color: rgba($bly, 0.93)
     border-radius: 12px
     box-shadow: 0 4px 20px $shadow
 
@@ -185,7 +71,7 @@ $font-family: 'Raleway', sans-serif
     .btn
       padding: 10px 20px
       font-size: 1em
-      color: $white
+      color: $bly
       background-color: $red
       border: none
       border-radius: 6px
@@ -197,21 +83,6 @@ $font-family: 'Raleway', sans-serif
         transform: scale(1.05)
 
 @media (max-width: 768px)
-  .nav-container
-    padding: 1rem
-
-  .menu-items
-    gap: 1.5rem
-
-    ul
-      gap: 1.5rem
-
-  .nav-text
-    font-size: 0.75rem
-
-  .logo .nav-text
-    font-size: 1.2rem
-
   .hero
     position: static
     transform: none
@@ -224,9 +95,9 @@ $font-family: 'Raleway', sans-serif
 
     .text-box
       margin-top: -50px
-      background-color: $white
+      background-color: $bly
 
-.tips-container 
+.tips-container
   display: grid
   grid-template-columns: repeat(5, 1fr)
   width: 100%
@@ -235,17 +106,17 @@ $font-family: 'Raleway', sans-serif
   gap: 20px
   padding: 20px
 
-.tips-container .tip 
+.tips-container .tip
   border: 1px solid #ccc
   border-radius: 10px
   padding: 20px
   text-align: center
   position: relative
-  border: 2px solid $secondary
+  border: 2px solid $bly
   border-radius: 0.5rem
   cursor: pointer
   transition: all 0.3s ease
-  background-color: $secondary
+  background-color: $bly
 
   &:hover
     border-color: $primary-color
@@ -254,11 +125,10 @@ $font-family: 'Raleway', sans-serif
   &.active
     background-color: $primary-color
     border-color: $primary-color
-    color: $surface
+    color: $secondary
 
     p
-      color: $surface
-
+      color: $secondary
 
 .tip-icon
   margin-top: 50px
@@ -268,7 +138,7 @@ $font-family: 'Raleway', sans-serif
 
 .tips
   padding: 2rem
-  background-color: $secondary  
+  background-color: $bly
 
 .tips-title
   color: $primary-color
@@ -296,7 +166,7 @@ $font-family: 'Raleway', sans-serif
 
 .video-section
   padding: 40px 20px
-  background-color: $surface
+  background-color: $secondary
   text-align: center
 
   h2
@@ -317,64 +187,7 @@ $font-family: 'Raleway', sans-serif
     border-radius: 10px
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
 
-.footer
-  background-color: $primary-color
-  color: $surface
-  padding: 3rem 0 1rem
-  font-family: $font-family
-  margin-top: 30px
-
-.footer-container
-  justify-items: center
-  display: grid
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
-  gap: 2rem
-  max-width: 1200px
-  margin: 0 auto
-  padding-bottom: 2rem
-
-.footer-section
-  h4
-    font-size: 20px
-    margin-bottom: 1rem
-    color: $surface
-
-  a, p
-    font-size: 20px
-    display: flex
-    color: $surface
-    text-decoration: none
-    line-height: 1.8
-
-    &:hover
-      color: $yellow
-      transition: color 0.2s ease
-
-.footer-bottom
-  margin-top: 2rem
-  text-align: center
-  font-size: 0.85rem
-  color: rgba($surface, 0.8)
-
 @media (max-width: 480px)
-  .nav-menu
-    flex-direction: column
-    gap: 1rem
-
-  .menu-items
-    flex-direction: column
-    gap: 1rem
-    align-items: center
-
-    ul
-      flex-direction: column
-      gap: 1rem
-      align-items: center
-
-  .nav-item
-    width: 100%
-    text-align: center
-
   .tips-image img
     height: 300px
 
@@ -404,5 +217,3 @@ $font-family: 'Raleway', sans-serif
 
   .video-grid iframe
     height: 160px
-
-  
