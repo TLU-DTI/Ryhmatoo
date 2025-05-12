@@ -263,7 +263,8 @@ section {
 
 .image img {
   max-height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section:nth-of-type(even) .section-content {
@@ -341,6 +342,4 @@ section:nth-of-type(odd) .section-content {
     font-size: 14px;
     padding: 0.5rem;
   }
-}
-
-/*# sourceMappingURL=aboutus.css.map */
+}/*# sourceMappingURL=aboutus.css.map */
