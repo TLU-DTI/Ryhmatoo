@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="et">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,101 +7,110 @@
   <link rel="stylesheet" href="css/traveltips.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
-
-<body>
-  <nav class="nav-container">
-    <ul class="nav-menu">
-      <li class="nav-item logo">
-        <a href="index.html" class="nav-link">
-          <span class="material-icons-round nav-icon">travel_explore</span>
-          <span class="nav-text logo-text">Reisimine</span>
-        </a>
-      </li>
-      <li class="menu-items">
-        <ul>
-          <li class="nav-item">
-            <a href="riigi.html" class="nav-link">
-              <span class="material-icons-round nav-icon">public</span>
-              <span class="nav-text">Riigid</span>
+  <body>
+      <nav class="nav-container">
+        <ul class="nav-menu">
+          <li class="nav-item logo">
+            <a href="index.html" class="nav-link">
+              <span class="material-icons-round nav-icon">travel_explore</span>
+              <span class="nav-text logo-text">Reisimine</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="traveltips.html" class="nav-link">
-              <span class="material-icons-round nav-icon">lightbulb</span>
-              <span class="nav-text">Reisinõuanded</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="aboutus.html" class="nav-link">
-              <span class="material-icons-round nav-icon">people</span>
-              <span class="nav-text">Meie kohta</span>
-            </a>
+          <li class="menu-items">
+            <ul>
+              <li class="nav-item">
+                <a href="riigi.html" class="nav-link">
+                  <span class="material-icons-round nav-icon">public</span>
+                  <span class="nav-text">Riigid</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="traveltips.html" class="nav-link">
+                  <span class="material-icons-round nav-icon">lightbulb</span>
+                  <span class="nav-text">Reisinõuanded</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="aboutus.html" class="nav-link">
+                  <span class="material-icons-round nav-icon">people</span>
+                  <span class="nav-text">Meie kohta</span>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
-      </li>
-    </ul>
-  </nav>
-  <div class="tips-image">
-    <img src="images/tips.jpg" alt="Tausta pilt noormehega ja mägedega">
-    <div class="box">
-      <div class="box-content">
-        <div class="text-box">
-          <h1>Reisinipid</h1>
-          <p>Ole valmis igaks reisiks! Lihtsad nõuanded muretuks teekonnaks.</p>
-          <button class="btn">Näita nõuandeid</button>
+      </nav>
+
+      <main>
+        <div class="tips-image">
+          <img src="images/tips.jpg" alt="Tausta pilt noormehega ja mägedega">
+          <div class="box">
+            <div class="box-content">
+              <div class="text-box">
+                <h1>Reisinipid</h1>
+                <p>Ole valmis igaks reisiks! Lihtsad nõuanded muretuks teekonnaks.</p>
+                <button class="btn">Näita nõuandeid</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="tips-container" id="tips-section">
-    <div class="tip">
-      <img src="images/icons/planning.png" alt="Reisi planeerimise ikoon" class="tip-icon">
-      <p>Reisi planeerimine</p>
-    </div>
-    <div class="tip">
-      <img src="images/icons/flight.png" alt="Lennuki ikoon" class="tip-icon">
-      <p>Lennud</p>
-    </div>
-    <div class="tip">
-      <img src="images/icons/money.png" alt="Rahakotti ikoon" class="tip-icon">
-      <p>Eelarve ja raha</p>
-    </div>
-    <div class="tip">
-      <img src="images/icons/safety.png" alt="Turvalisuse ikoon" class="tip-icon">
-      <p>Turvalisus</p>
-    </div>
-    <div class="tip">
-      <img src="images/icons/backpack.png" alt="Kohvride ikoon" class="tip-icon">
-      <p>Pakkimine</p>
-    </div>
-  </div>
-  <div class="container" id="list">
-    <div class="tips"></div>
-  </div>
-  <section class="video-section">
-    <h2>VAATA KASULIKKE VIDEOID</h2>
-    <div class="video-grid">
-      <iframe src="https://www.youtube.com/embed/v1EelA5RgW4" frameborder="0" allowfullscreen title="YouTube video: How to plan a trip to Europe"></iframe>
-      <iframe src="https://www.youtube.com/embed/LmSb21jJErM" frameborder="0" allowfullscreen title="YouTube video: 23 travel tips & hacks for 2023"></iframe>
-      <iframe src="https://www.youtube.com/embed/fqu02-6c7Os" frameborder="0" allowfullscreen title="YouTube video: How to travel with just one bag"></iframe>
-    </div>
-  </section>
 
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>Kontaktid:</h4>
-        <p>E-post: info@reis.ee</p>
-        <p>Telefon: +3725195673</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      &copy; 2025 Reis.ee — kõik õigused kaitstud.
-    </div>
-  </footer>
+        <section class="tips-container" id="tips-section">
 
-  <script src="js/traveltips.js"></script>
-  
-</body>
+          <article class="tip">
+            <img src="images/icons/planning.png" alt="Reisi planeerimise ikoon" class="tip-icon">
+            <p>Reisi planeerimine</p>
+          </article>
 
+          <article class="tip">
+            <img src="images/icons/flight.png" alt="Lennuki ikoon" class="tip-icon">
+            <p>Lennud</p>
+          </article>
+
+          <article class="tip">
+            <img src="images/icons/money.png" alt="Rahakotti ikoon" class="tip-icon">
+            <p>Eelarve ja raha</p>
+          </article>
+
+          <article class="tip">
+            <img src="images/icons/safety.png" alt="Turvalisuse ikoon" class="tip-icon">
+            <p>Turvalisus</p>
+          </article>
+
+          <article class="tip">
+            <img src="images/icons/backpack.png" alt="Kohvride ikoon" class="tip-icon">
+            <p>Pakkimine</p>
+          </article>
+
+        </section>
+
+        <section class="container" id="list">
+          <ul class="tips"></ul>
+        </section>
+
+        <section class="video-section">
+          <h2>VAATA KASULIKKE VIDEOID</h2>
+          <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/v1EelA5RgW4" frameborder="0" allowfullscreen title="YouTube video: How to plan a trip to Europe"></iframe>
+            <iframe src="https://www.youtube.com/embed/LmSb21jJErM" frameborder="0" allowfullscreen title="YouTube video: 23 travel tips & hacks for 2023"></iframe>
+            <iframe src="https://www.youtube.com/embed/fqu02-6c7Os" frameborder="0" allowfullscreen title="YouTube video: How to travel with just one bag"></iframe>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>Kontaktid:</h4>
+            <p>E-post: info@reis.ee</p>
+            <p>Telefon: +3725195673</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2025 Reis.ee — kõik õigused kaitstud.
+        </div>
+      </footer>
+
+    <script src="js/traveltips.js"></script>  
+  </body>
 </html>

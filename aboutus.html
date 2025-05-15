@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="et">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
     <title>Meie kohta</title>
 </head>
-
 <body>
-
     <nav class="nav-container">
         <ul class="nav-menu">
             <li class="nav-item logo">
@@ -44,91 +41,80 @@
             </li>
         </ul>
     </nav>
-
-    <div class="container">
-        <section class="introduction">
-            <div class="text">
-                <h1>Meist</h1>
-                <p>Me oleme kirglike reisihuviliste meeskond, jagame kasulikke nõuandeid, lugusid ja nippe, et muuta
-                    teie reisid mugavamaks ja värvikamaks.</p>
-            </div>
-        </section>
-
-        <section>
-            <div class="section-content">
+    
+    <main>
+        <div class="container">
+            <section class="introduction">
                 <div class="text">
-                    <h2>Meie ajalugu</h2>
-                    <p>See projekt loodi 2012. aastal rühma inimeste poolt, kes armastasid reisimist. Sellest ajast
-                        peale oleme püüdnud inspireerida ja aidata oma lugejaid marsruutide valimisel ja reisinippidega.
-                    </p>
+                    <h1>Meist</h1>
+                    <p>Me oleme kirglike reisihuviliste meeskond, jagame kasulikke nõuandeid, lugusid ja nippe, et muuta
+                        teie reisid mugavamaks ja värvikamaks.</p>
                 </div>
-                <div class="image">
-                    <img src="images/history.jpg" alt="Inimesed põllul" />
+            </section>
+            <section>
+                <div class="section-content">
+                    <div class="text">
+                        <h2>Meie ajalugu</h2>
+                        <p>See projekt loodi 2012. aastal rühma inimeste poolt, kes armastasid reisimist. Sellest ajast
+                            peale oleme püüdnud inspireerida ja aidata oma lugejaid marsruutide valimisel ja reisinippidega.
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="images/history.jpg" alt="Inimesed põllul" />
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="section-content reverse">
-                <div class="image">
-                    <img src="images/values.jpg" alt="Inimese käaed ja tahvelarvuti" />
+            </section>
+            <section>
+                <div class="section-content reverse">
+                    <div class="image">
+                        <img src="images/values.jpg" alt="Inimese käaed ja tahvelarvuti" />
+                    </div>
+                    <div class="text">
+                        <h2>Meie väärtused</h2>
+                        <p>Pakume alati ainult kontrollitud teavet, inspireerime uutele reisidele ja toetame iga lugejat
+                            reisi ettevalmistamisel.</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <h2>Meie väärtused</h2>
-                    <p>Pakume alati ainult kontrollitud teavet, inspireerime uutele reisidele ja toetame iga lugejat
-                        reisi ettevalmistamisel.</p>
+            </section>
+            <section>
+                <div class="section-content">
+                    <div class="text">
+                        <h2>Meie meeskond</h2>
+                        <p>Meie oleme rühm reisihuvilisi, kes on alati valmis jagama oma kogemusi teiega. Meil ei ole
+                            kontorit, aga meid leidub kõikjal, kus on inspiratsiooni!</p>
+                    </div>
+                    <div class="image">
+                        <img src="images/team.jpg" alt="Maas istuvad noored inimesed" />
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="section-content">
-                <div class="text">
-                    <h2>Meie meeskond</h2>
-                    <p>Meie oleme rühm reisihuvilisi, kes on alati valmis jagama oma kogemusi teiega. Meil ei ole
-                        kontorit, aga meid leidub kõikjal, kus on inspiratsiooni!</p>
+            </section>
+            <section>
+                <div class="section-content reverse">
+                    <div class="image">
+                        <img src="images/achievement.jpg" alt="Hüppavad inimesed" />
+                    </div>
+                    <div class="text">
+                        <h2>Meie saavutused</h2>
+                        <p>Oleme aastate jooksul saavutanud palju, armastusega uurides ja dokumenteerides enam kui 30
+                            sihtkohta üle kogu maailma.</p>
+                    </div>
                 </div>
-                <div class="image">
-                    <img src="images/team.jpg" alt="Maas istuvad noored inimesed" />
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="section-content reverse">
-                <div class="image">
-                    <img src="images/achievement.jpg" alt="Hüppavad inimesed" />
-                </div>
-                <div class="text">
-                    <h2>Meie saavutused</h2>
-                    <p>Oleme aastate jooksul saavutanud palju, armastusega uurides ja dokumenteerides enam kui 30
-                        sihtkohta üle kogu maailma.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section">
-            <h2>Võta meiega ühendust</h2>
-            <!-- Edukuse teade näitmine -->
-            <form class="contact-form" onsubmit="showSuccessMessage(event)"> 
-                <label for="name">Nimi:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">E-post:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Sõnum:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Saada sõnum</button>
-
-
-            </form>
-        </section>
-    </div>
-
-
-
+            </section>
+            <section class="contact-section">
+                <h2>Võta meiega ühendust</h2>
+                <!-- Edukuse teade näitmine -->
+                <form class="contact-form" onsubmit="showSuccessMessage(event)"> 
+                    <label for="name">Nimi:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Sõnum:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Saada sõnum</button>
+                </form>
+            </section>
+        </div>
+    </main>
     <footer class="footer">
         <div class="footer-container">
           <div class="footer-section">
@@ -140,8 +126,7 @@
         <div class="footer-bottom">
           &copy; 2025 Reis.ee — kõik õigused kaitstud.
         </div>
-      </footer>
-
+    </footer>
+    <script src="js/aboutus.js"></script>
 </body>
-
 </html>

@@ -157,13 +157,13 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 2rem;
 }
 
 .footer-section h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   color: #ffffff;
+  text-align: center;
 }
 .footer-section a, .footer-section p {
   display: flex;
@@ -263,8 +263,7 @@ section {
 
 .image img {
   max-height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 section:nth-of-type(even) .section-content {
@@ -279,8 +278,32 @@ section:nth-of-type(odd) .section-content {
   padding-left: 2rem;
 }
 
-.text {
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 50px;
+  padding: 2rem;
+  border-radius: 12px;
+}
+.section-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 rgba(213, 213, 213, 0.8);
+}
+
+.text,
+.image {
+  flex: 1;
+  padding: 20px;
   max-width: 50%;
+}
+
+.image img {
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .text h2 {
@@ -327,19 +350,39 @@ section:nth-of-type(odd) .section-content {
 }
 
 @media (max-width: 768px) {
+  .section-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .text,
+  .image {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
   .text h2 {
     font-size: 1.5rem;
   }
   .text p {
     font-size: 16px;
   }
+  .image img {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+  }
   .contact-form {
     padding: 1rem;
   }
 }
 @media (max-width: 480px) {
-  .contact-form input, .contact-form textarea, .contact-form button {
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
     font-size: 14px;
     padding: 0.5rem;
   }
-}/*# sourceMappingURL=aboutus.css.map */
+}
+
+/*# sourceMappingURL=aboutus.css.map */
